@@ -1,3 +1,4 @@
+Construção da base da API e banco de dados:
 1. npm init -y
 2. npm install -D typescript tsx @types/node
 3. npx tsc --init
