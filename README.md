@@ -1,9 +1,47 @@
-Ao baixar o repositório localmente:
+Ao baixar o repositório localmente (usar command prompt):
 1. Se não tiver instalado ainda, instalar ' npm install -D typescript tsx @types/node '
 2. gerar o banco de dados local 'npx prisma generate'
 3. testar API ' npm run dev '
 
-Construção da base da API e banco de dados:
+Pacientes:
+
+POST: ' http://localhost:3000/pacientes ' { "nome": "string", "idade": number, "telefone": "string", "convenio": "string"}
+
+GET (getAll): ' http://localhost:3000/pacientes '
+
+GET (getById): ' http://localhost:3000/pacientes/:id '
+ 
+PUT: ' http://localhost:3000/pacientes/:id ' { "nome": "string", "idade": number, "telefone": "string", "convenio": "string"}
+
+DELETE: ' http://localhost:3000/pacientes/:id '
+
+Profissionais:
+
+POST: ' http://localhost:3000/profissionais ' { "nome": "string", "especialidade": "string", "registroConselho": "string"}
+
+GET (getAll): ' http://localhost:3000/profissionais '
+
+GET (getById): ' http://localhost:3000/profissionais/:id '
+ 
+PUT: ' http://localhost:3000/profissionais/:id ' { "nome": "string", "especialidade": "string", "registroConselho": "string"}
+
+DELETE: ' http://localhost:3000/profissionais/:id '
+
+Consultas:
+
+POST: ' http://localhost:3000/consultas ' { "nomeProcedimento": "string", "duracaoHoras": number, "duracaoMinutos": number, "pacienteId": number, "profissionalId": number}
+
+GET (getAll): ' http://localhost:3000/consultas '
+
+GET (getById): ' http://localhost:3000/consultas/:id '
+ 
+PUT: ' http://localhost:3000/consultas/:id ' { "nomeProcedimento": "string", "duracaoHoras": number, "duracaoMinutos": number, "pacienteId": number, "profissionalId": number}
+
+DELETE: ' http://localhost:3000/consultas/:id '
+
+
+
+Construção da base da API e banco de dados (Já feito, apenas demonstrativo):
 1. npm init -y
 2. npm install -D typescript tsx @types/node
 3. npx tsc --init
