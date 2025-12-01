@@ -1,3 +1,8 @@
+Ao baixar o repositório localmente:
+1. Se não tiver instalado ainda, instalar ' npm install -D typescript tsx @types/node '
+2. gerar o banco de dados local 'npx prisma generate'
+3. testar API ' npm run dev '
+
 Construção da base da API e banco de dados:
 1. npm init -y
 2. npm install -D typescript tsx @types/node
@@ -22,8 +27,3 @@ Construção da base da API e banco de dados:
 21. Criar arquivos da consulta
 22. Criar server.ts 
 23. npm run dev (ignorar erro no schema.prisma da url, visual studio espera outra versão do prisma)
-
-Ao baixar o repositório localmente:
-1. Se não tiver instalado ainda, instalar ' npm install -D typescript tsx @types/node '
-2. gerar o banco de dados local 'npx prisma generate'
-3. testar API ' npm run dev '
