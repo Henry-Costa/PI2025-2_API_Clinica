@@ -1,7 +1,7 @@
 {
   "name": "api-prismav2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Construção da base da API e banco de dados:\r 1. npm init -y\r 2. npm install -D typescript tsx @types/node\r 3. npx tsc --init\r 4. npm install express\r 5. npm install -D @types/express\r 6. npm install prisma --save-dev\r 7. npm install @prisma/client\r 8. npx prisma init\r 9. npm install dotenv\r 10. Ajuste do schema.prisma (provider = sqlite)\r 11. Ajuste o env - DATABASE_URL=\"file:./database.db\"\r 12. prisma.config.ts -> import \"dotenv/config\"\r 13. Ajustar schema.prisma com as tabelas\r 14. Ajustar package.json com type = module\r 15. No tsconfig.json descomentar o rootDir e outDir\r 16. npx prisma generate\r 17. npx prisma migrate dev --name init\r 18. Criar pastas de camadas\r 19. Criar arquivos do paciente\r 20. Criar arquivos do profissional\r 21. Criar arquivos da consulta\r 22. Criar server.ts \r 23. npm run dev (ignorar erro no schema.prisma da url, visual studio espera outra versão do prisma)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,14 +14,22 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^5.0.5",
-    "@types/node": "^24.10.0",
-    "prisma": "^6.18.0",
-    "tsx": "^4.20.6",
+    "@types/node": "^24.10.1",
+    "prisma": "^6.19.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@prisma/client": "^6.18.0",
+    "@prisma/client": "^6.19.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henry-Costa/PI2025-2_API_Clinica.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Henry-Costa/PI2025-2_API_Clinica/issues"
+  },
+  "homepage": "https://github.com/Henry-Costa/PI2025-2_API_Clinica#readme"
 }
