@@ -1,7 +1,8 @@
 Ao baixar o repositório localmente (usar command prompt):
 1. Se não tiver instalado ainda, instalar ' npm install -D typescript tsx @types/node '
-2. gerar o banco de dados local 'npx prisma generate'
-3. testar API ' npm run dev '
+2. Resetar qualquer partes de bancos restantes para não influenciar novo banco ' npx prisma migrate reset '
+3. gerar o banco de dados local 'npx prisma generate'
+4. testar API ' npm run dev '
 
 Pacientes:
 
